@@ -1,0 +1,6 @@
+<div appTick firstColor="blue" secondColor="red" (tickEvent)="handlerTick($event)">
+  <div *appClock="timeStamp; let time">
+    {{time | date: 'hh:mm:ss'}}
+  </div>
+</div>
+
